@@ -28,6 +28,8 @@ a color {rgba(236, 247, 250, 0.05)
 .item{
   background-color: rgba(236, 247, 250, 0.05);
   margin-bottom:20px;
+  display:flex;
+  align-items:center;
 }
 .avatar-image {
     width: 128px;
@@ -59,7 +61,13 @@ object-fit: cover;
 
 .social-icons-row{
   margin-bottom:30px;
-  text-align: center;
+  display: flex;
+  justify-content:space-around;
+}
+
+.link-text{
+  text-align:center;
+  flex-grow:1;
 }
 </style>
 </head>
@@ -91,14 +99,14 @@ object-fit: cover;
   <div class="links row">
   <div class="item">
     <img src="thumbnails/instructables.jpeg" alt="instructables icon a handdrawn yellow robot" class="thumbnail">
-    <a target="_blank" href="https://instructables.com"> Instructables - A great commnunity to learn, share, and make tutorials
+    <a class="link-text" target="_blank" href="https://instructables.com"> Instructables - A great commnunity to learn, share, and make tutorials
 
     </a>
     </div>
 
     <div class="item">
     <img src="thumbnails/UBUicon.png" alt="Black and White film still of woman with her eye held open" class="thumbnail">
-    <a target= "_blank" href="https://www.ubu.com/film/index.html"> UBU - thousands of avant-garde films & videos </a>
+    <a class="link-text" target= "_blank" href="https://www.ubu.com/film/index.html"> UBU - thousands of avant-garde films & videos </a>
   </div>
   
   <div class="item">
